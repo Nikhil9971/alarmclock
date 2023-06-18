@@ -1,0 +1,103 @@
+body, .container, .content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* border:1px solid black; */
+}
+.container{
+    background:white;
+    width:440px;
+    padding:30px 30px 38px;
+    border-radius:10px;
+    flex-direction:column;
+
+}
+
+.container img{
+    max-width:103px;
+
+}
+
+.container h1{
+    font-size:38px;
+    font-weight:500;
+    margin: 30px 0;
+}
+
+.container .content{
+    justify-content: space-between;
+    width:100%;
+}
+.container .content .disable{
+    opacity:0.6;
+    pointer-events: none;
+}
+.content .column{
+    border-radius:5px;
+    padding:0 10px;
+    border: 1px solid #999;
+    width: calc(100% / 3 - 5px);
+}
+
+.content select{
+    outline:none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size:19px;
+}
+
+body{
+    /* display:flex; */
+    min-height:100vh;
+    background: wheat;
+    background-image: linear-gradient(to right, rgb(240, 162, 16), wheat);
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    /* background-image: linear-gradient(to right, #870000, #190a05); */
+}
+
+.container button{
+    width:100%;
+    outline:none;
+    border: none;
+    margin-top:20px;
+    font-size:20px;
+    padding:17px 0;
+    border-radius:5px;
+    background: wheat;
+    color:black;
+    cursor:pointer;
+}
+
+.container button:hover{
+    background-color: rgb(245, 194, 99);
+}
+
+.alarmList{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid rgba(95, 87, 87, 0.507);
+    margin:10px;
+    width:100%;
+    padding:17px 0px;
+    font-size:20px;
+}
+
+#alarmListTime{
+    width:70%;
+    margin-left:10px;
+}
+
+#alarmListBtn{
+    width:15%;
+    margin:auto;
+    border-radius:10px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color:white;
+}
+#alarmListBtn:hover{
+    background-color: rgb(142, 0, 0);
+}
